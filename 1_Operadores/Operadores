@@ -1,0 +1,51 @@
+//-----------------------------------[ Operadores ]-----------------------------------//
+
+1. Operadores aritmaticos
+    Suma, Resta, Multiplicacion, Division y Modulo
+
+    El Modulo es usado cuando necesitamos el resto, o sea, lo que se sobra en la Division
+    2 % 2 = 0;
+    3 % 2 = 1;
+    SI EL PRIMER NUMERO ES MENOR QUE EL SEGUNDO LA RESPUESTA SIEMPRE ES EL PRIMERO
+    2 % 3 = 2;
+    3 % 4 = 3;
+    200 % 380 = 200
+
+2. Operadores Relaciones
+
+    >    Mayor que
+    <    Menor que
+    >=   Mayor igual
+    <=   Menor igual
+    !=   Diferente
+    !==  Estrictamente Diferente
+    =    Asignacion
+    ==   Comparacion  '1' - 1 daria true
+    ===  Estrictamente Igual--> Este tambien evalua el tipo de dato "1" - 1 aca daria falso porque uno
+                                es un tipo de dato number y el otro es un tipo de dato string
+
+3. Incremento y decremento
+
+    let i = 1;
+    i = i + 2
+    console.log(i); daria 3
+
+Otra manera de hacerlo
+
+    let i = 1;
+    i += 2    --> Aca le estamos diciendo que sume el dos y que se reasigne en la variable
+    i -= 1
+    i *= 2
+    i /= 1
+
+Operador unario
+si vamos de uno en uno podemos usar
+    i++ y i--
+
+4. Operadores Logicos
+
+    &&  AND -->Todas las condiciones se tiene que Cumplir
+    ||  OR  -->Con que una sea VERDADERA al final da Verdadero
+    !   NOT -->si esta negativo lo vuelve positivo o si esta positivo lo vuelve negativo
+    console.log(!true);  = false
+    console.log(!false); = true
