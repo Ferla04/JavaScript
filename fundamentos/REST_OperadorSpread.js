@@ -36,3 +36,71 @@ console.log(arr3);
 console.log('Aqui une el primer y segundo array');
 let arr4 = [...arr1,...arr2];
 console.log(arr4);
+
+//Operador Sread = Convierte a valores sueltos;
+
+
+
+
+//EJERCICIOS:
+
+const encotrarMayor = (menor = 'mayor', ...array) => {
+    let contador = 0;
+    for( let i in array ) {
+
+        if(menor == 'mayor'){
+            if( array[i] > array[contador] ) {
+                contador = i;
+            }
+        }else if(menor == 'menor'){
+            if( array[i] < array[contador] ) {
+                contador = i;
+            }
+        }else{
+            menor = 'mayor'
+        }
+    }
+    return array[contador];
+}
+
+
+console.log(encotrarMayor('menor', 9,6,8,19,1));
+//                                     |_____________ Este argumento lo toma como array.
+
+//--------------------------------------------------------------------------------------------//
+
+function MayorMenor(a,b,...c){
+    let numeros = [a, b];
+    let mayor = 0;
+    let menor = numeros[0];
+    
+    c.forEach(n =>{
+        numeros.push(n);
+    });
+
+    // for(let i = 0; i < numeros.length; i++){
+    //     if(mayor < numeros[i]){
+    //         mayor = numeros[i];
+    //     }
+    // }
+
+    // for(let i = 0; i < numeros.length; i++){
+    //     if(menor > numeros[i]){
+    //         menor = numeros[i];
+    //     }
+    // }
+
+    for(i in numeros){
+        if(mayor < numeros[i]){
+            mayor = numeros[i];
+        }
+        if(menor > numeros[i]){
+            menor = numeros[i];
+        }
+    }
+
+    console.log(`El mayor es: ${mayor} 
+El menor es: ${menor}`);
+}
+
+MayorMenor(3,4,6,7,22,3,6);
