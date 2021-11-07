@@ -126,6 +126,8 @@ console.log(restIncludes);
 
 //------------------------------ SORT ------------------------------
 /*Permite ordenar elemento de un arreglo */
+console.log('SORT----------------------');
+
 
 let arr5 = [41,36,2,49,65,75];
 
