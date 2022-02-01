@@ -184,3 +184,7 @@ let ExpRegular2 = /java/ig;
 
 console.log(ExpRegular.test(cadena2));
 console.log(ExpRegular.exec(cadena2));
+
+let cadena3 = 'HolA CoMo ESTa la GeTuzA';
+cadena3 = cadena3.replace(/[a-z]/g,'p');
+console.log(cadena3)
