@@ -163,4 +163,24 @@ for(let i = 0; i < arr5.length; i++){
     }
 }
 
+//---------------------------- REPLACE -----------------------------
 
+let cadena = 'Python es genial';
+console.log(cadena);
+cadena = cadena.replace('Python','JavaScript');
+console.log(cadena);
+
+//---------------------------- REGEXP -----------------------------
+let cadena2 = 'Java es mi primer lenguaje, java es genial, java tiene una sintaxis muy facil';
+
+/*EXPRESIONES REGULARES*/
+let ExpRegular = new RegExp('java','ig');//-----El segundo argumento se llaman banderas
+let ExpRegular2 = /java/ig;
+/*
+/java{1}/ig --> las llaves dan a entender que dan un rango
+/java{1,4}/ig --> rango donde la palabra se tiene que repetir de 1 a 4
+/java{1,}/ig --> si dejamos la coma es indefinido 
+*/
+
+console.log(ExpRegular.test(cadena2));
+console.log(ExpRegular.exec(cadena2));
